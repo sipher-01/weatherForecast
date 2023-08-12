@@ -26,6 +26,7 @@ res.sendFile(__dirname+"/index.html")
       })
     })
  })
- app.listen(3000,()=>{
+ const PORT = 3000 || process.env.PORT;
+ app.listen(PORT,()=>{
     console.log("working")
  })
